@@ -10,17 +10,17 @@ function handleOrientation(event) {
 	var gamma    = event.gamma;
 
 	if(alpha && beta && gamma) {
-		console.log("Recieving orientation data");
 		if(isFirstIter) {
 			var alphaOffset = alpha;
 			var betaOffset = beta;
 			var gammaOffset = gamma;
+			console.log("Recieving orientation data");
 			isFirstIter = false;
 		}
 		try {
-		background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
-		var newTop = ((window.innerHeight / 2) - 155) - ((beta / 90) * (window.innerHeight / 2));
-		background.style.top = "newTop";
+			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
+			var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
+			background.style.top = "newTop";
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
