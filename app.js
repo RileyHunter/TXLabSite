@@ -19,12 +19,18 @@ function handleOrientation(event) {
 			var gammaOffset = gamma;
 			isFirstIter = false;
 		}
+		try {
 		background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
 		var newTop = ((window.innerHeight / 2) - 155) - ((beta / 90) * (window.innerHeight / 2));
 		background.style.top = "newTop";
+		} catch (err) {
+			console.log("Error", e.stack);
+			console.log("Error", e.name);
+			console.log("Error", e.message);
+		}
 	} else {
 		console.log("No orientation")
 	}
 }
 
-console.log("v 0.1.3")
+console.log("v 0.1.4")
