@@ -10,9 +10,7 @@ function handleOrientation(event) {
 	var gamma    = event.gamma;
 
 	if(alpha && beta && gamma) {
-		console.log("a: " + alpha)
-		console.log("b: " + beta)
-		console.log("g: " + gamma)
+		console.log("Recieving orientation data");
 		if(isFirstIter) {
 			var alphaOffset = alpha;
 			var betaOffset = beta;
@@ -29,8 +27,8 @@ function handleOrientation(event) {
 			console.log("Error", e.message);
 		}
 	} else {
-		console.log("No orientation")
+		console.log("No orientation data");
 	}
 }
 
-console.log("v 0.1.4")
+console.log("v 0.1.5")
