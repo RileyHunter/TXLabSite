@@ -31,4 +31,4 @@ function handleOrientation(event) {
 	}
 }
 
-console.log("v 0.1.5")
+console.log("v 0.1.6")
