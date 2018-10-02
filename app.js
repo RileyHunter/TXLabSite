@@ -21,11 +21,12 @@ function handleOrientation(event) {
 			isFirstIter = false;
 		}
 		try {
-			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
-			var newTop = ((window.innerHeight / 2) - 960) + (((beta - betaOffset) / 90) * (window.innerHeight / 2));
+
+			var newTop = ((window.innerHeight / 2) - 960) + (((beta - betaOffset) / 90) * (1920));
 			background.style.top = newTop;
-			var newLeft = ((window.innerWidth / 2) - 540) + (((gamma - gammaOffset) / 90) * (window.innerWidth / 2));
+			var newLeft = ((window.innerWidth / 2) - 540) + (((gamma - gammaOffset) / 90) * (1080));
 			background.style.left = newLeft;
+			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
@@ -36,4 +37,4 @@ function handleOrientation(event) {
 	}
 }
 
-console.log("v 0.1.11")
+console.log("v 0.1.12")
