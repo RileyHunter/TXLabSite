@@ -11,4 +11,7 @@ function handleOrientation(event) {
 	console.log("a: " + alpha)
 	console.log("b: " + beta)
 	console.log("g: " + gamma)
+	if(alpha && beta && gamma) {
+		background.style.transform = "rotate(" + alpha + "deg)";
+	}
 }
