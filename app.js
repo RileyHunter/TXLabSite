@@ -2,6 +2,9 @@ window.addEventListener("deviceorientation", handleOrientation, true);
 
 const background = document.querySelector("#background");
 var isFirstIter = true;
+var alphaOffset = 0,
+	betaOffset = 0,
+	gammaOffset = 0;
 
 function handleOrientation(event) {
 	var absolute = event.absolute;
@@ -11,16 +14,17 @@ function handleOrientation(event) {
 
 	if(alpha && beta && gamma) {
 		if(isFirstIter) {
-			var alphaOffset = alpha;
-			var betaOffset = beta;
-			var gammaOffset = gamma;
+			alphaOffset = alpha;
+			betaOffset = beta;
+			gammaOffset = gamma;
 			console.log("Recieving orientation data");
 			isFirstIter = false;
 		}
 		try {
 			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
-			//var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
-			//background.style.top = "newTop";
+			var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
+			background.style.top = "newTop";
+			console.log(alpha - alphaOffset);
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
@@ -31,4 +35,4 @@ function handleOrientation(event) {
 	}
 }
 
-console.log("v 0.1.6")
+console.log("v 0.1.7")
