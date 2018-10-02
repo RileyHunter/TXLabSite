@@ -7,9 +7,10 @@ html, body {
 }
 
 #main-title {
+	position: fixed;
 	width: 100%;
 	text-align: center;
-	padding-top: 10%;
+	top: 10%;
 	font-size: 300%;
 }
 
@@ -18,9 +19,10 @@ html, body {
 }
 
 #contact {
+	position: fixed;
 	width: 100%;
 	text-align: center;
-	padding-top: 20%;
+	bottom: 20%;
 }
 
 #background {
