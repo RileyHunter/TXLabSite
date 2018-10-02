@@ -25,6 +25,7 @@ function handleOrientation(event) {
 			var newTop = ((window.innerHeight / 2) - 155) + (((beta - betaOffset) / 90) * (window.innerHeight / 2));
 			background.style.top = newTop;
 			var newLeft = ((window.innerWidth / 2) - 400) + (((gamma - gammaOffset) / 90) * (window.innerWidth / 2));
+			background.style.left = newLeft;
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
@@ -35,4 +36,4 @@ function handleOrientation(event) {
 	}
 }
 
-console.log("v 0.1.10")
+console.log("v 0.1.11")
