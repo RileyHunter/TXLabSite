@@ -5,3 +5,22 @@ html, body {
   width: 100%;
   font-family: 'M PLUS 1p', sans-serif;
 }
+
+#main-title {
+	width: 100%;
+	text-align: center;
+	padding-top: 15%;
+	font-size: 300%;
+}
+
+#main-title--subtitle {
+	font-size: 33%;
+}
+
+#background {
+	position: fixed;
+	left: calc(50% - 400px);
+	top: calc(50% - 155px);
+	z-index: -9999;
+	opacity: 0.2;
+}
