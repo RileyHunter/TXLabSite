@@ -22,9 +22,9 @@ function handleOrientation(event) {
 		}
 		try {
 			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
-			var newTop = ((window.innerHeight / 2) - 155) + (((beta - betaOffset) / 90) * (window.innerHeight / 2));
+			var newTop = ((window.innerHeight / 2) - 960) + (((beta - betaOffset) / 90) * (window.innerHeight / 2));
 			background.style.top = newTop;
-			var newLeft = ((window.innerWidth / 2) - 400) + (((gamma - gammaOffset) / 90) * (window.innerWidth / 2));
+			var newLeft = ((window.innerWidth / 2) - 540) + (((gamma - gammaOffset) / 90) * (window.innerWidth / 2));
 			background.style.left = newLeft;
 		} catch (err) {
 			console.log("Error", e.stack);
