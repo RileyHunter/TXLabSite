@@ -22,12 +22,7 @@ function handleOrientation(event) {
 		background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
 		var newTop = ((window.innerHeight / 2) - 155) - ((beta / 90) * (window.innerHeight / 2));
 		background.style.top = "newTop";
-	} else {
-		if(isFirstIter) {
-			isFirstIter = false;
-			console.log("No orientation data");
-		}
 	}
 }
 
-console.log("v 0.1.1")
+console.log("v 0.1.2")
