@@ -13,6 +13,7 @@ function handleOrientation(event) {
 		var alphaOffset = alpha;
 		var betaOffset = beta;
 		var gammaOffset = gamma;
+		isFirstIter = false;
 	}
 	
 	console.log("a: " + alpha)
