@@ -22,6 +22,8 @@ function handleOrientation(event) {
 		background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
 		var newTop = ((window.innerHeight / 2) - 155) - ((beta / 90) * (window.innerHeight / 2));
 		background.style.top = "newTop";
+	} else {
+		console.log("No orientation")
 	}
 }
 
