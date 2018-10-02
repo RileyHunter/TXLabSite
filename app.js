@@ -24,7 +24,7 @@ function handleOrientation(event) {
 			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
 			var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
 			background.style.top = "newTop";
-			console.log("newTop: " newTop)
+			console.log("newTop: " + newTop)
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
@@ -35,4 +35,4 @@ function handleOrientation(event) {
 	}
 }
 
-console.log("v 0.1.7")
+console.log("v 0.1.8")
