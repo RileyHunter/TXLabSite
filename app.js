@@ -12,9 +12,6 @@ function handleOrientation(event) {
 	console.log("a: " + alpha)
 	console.log("b: " + beta)
 	console.log("g: " + gamma)
-	
-
-	
 
 	if(alpha && beta && gamma) {
 		if(isFirstIter) {
@@ -28,3 +25,5 @@ function handleOrientation(event) {
 		background.style.top = "newTop";
 	}
 }
+
+console.log("v 0.1.1")
