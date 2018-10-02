@@ -19,8 +19,8 @@ function handleOrientation(event) {
 		}
 		try {
 			background.style.transform = "rotate(" + (alpha - alphaOffset) + "deg)";
-			var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
-			background.style.top = "newTop";
+			//var newTop = ((window.innerHeight / 2) - 155) - ((beta - betaOffset/ 90) * (window.innerHeight / 2));
+			//background.style.top = "newTop";
 		} catch (err) {
 			console.log("Error", e.stack);
 			console.log("Error", e.name);
