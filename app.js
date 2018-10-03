@@ -45,4 +45,4 @@ function handleResize() {
 	background.style.left = newLeft;
 }
 
-console.log("v 0.1.14")
+console.log("v 0.2.0")
