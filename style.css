@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'M PLUS 1p', sans-serif;
+  /*font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Raleway', sans-serif;*/
+  font-family: 'Krub', sans-serif;
 }
 
 #main-title {
