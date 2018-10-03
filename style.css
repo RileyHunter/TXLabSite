@@ -30,9 +30,7 @@ html, body {
 
 #background {
 	position: fixed;
-	height: 70%;
-	left: calc(50% - 320px);
-	top: 15%;
+	height: 50%;
 	z-index: -9999;
 	opacity: 0.2;
 }

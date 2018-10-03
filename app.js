@@ -6,6 +6,8 @@ var alphaOffset = 0,
 	betaOffset = 0,
 	gammaOffset = 0;
 
+
+
 function handleOrientation(event) {
 	var absolute = event.absolute;
 	var alpha    = event.alpha;
@@ -34,6 +36,13 @@ function handleOrientation(event) {
 	} else {
 		console.log("No orientation data");
 	}
+}
+
+function handleResize() {
+	var newTop = ((window.innerHeight / 2) - (background.clientHeight / 2))
+	background.style.top = newTop;
+	var newLeft = ((window.innerWidth / 2) - (background.clientWidth / 2))
+	background.style.left = newLeft;
 }
 
 console.log("v 0.1.14")
